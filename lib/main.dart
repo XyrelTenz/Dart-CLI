@@ -1,5 +1,6 @@
 // import "./api/fetch.dart";
-import "./dsa/sorted_array.dart";
+// import "./dsa/sorted_array.dart";
+import "./dsa/stack.dart";
 
 // void main() async {
 //   try {
@@ -11,5 +12,18 @@ import "./dsa/sorted_array.dart";
 //   }
 // }
 void main() {
-  sortedArray();
+  // sortedArray();
+  Stack<dynamic> stack = Stack<dynamic>()
+    ..push(1)
+    ..push(2)
+    ..push(3)
+    ..push(4)
+    ..push(5)
+    ..pop()
+    ..pop();
+
+  print(stack);
+
+  List<int> numbers = <int>[4, 3, 2, 5, 1]..sort((a, b) => a.compareTo(b));
+  print("Sorted Array: $numbers");
 }
