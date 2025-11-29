@@ -4,7 +4,7 @@ import 'dart:collection';
 /// PART 1: HELPER DATA STRUCTURES (Stack & Queue)
 /// ==============================================================================
 
-/// A generic LIFO (Last-In-First-Out) Stack implementation.
+// A generic LIFO (Last-In-First-Out) Stack implementation.
 /// Usage: Used for Depth-First Search (DFS).
 class Stack<T> {
   final List<T> _storage = [];
