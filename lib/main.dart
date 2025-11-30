@@ -20,7 +20,7 @@ void main() {
     ..push(3)
     ..push(4)
     ..push(5)
-    ..findArray(10)
+    ..findItem(5)
     ..pop();
 
   print(stack);
