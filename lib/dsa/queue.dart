@@ -1,3 +1,5 @@
+//LIFO or Last In First Out
+
 class Queue<T> {
   final List<T> _storage = <T>[];
 
