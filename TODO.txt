@@ -1,4 +1,4 @@
-1. Sorting Array
-2. Stack Array
-3. Queue Array
-4.
+1. Sorting Array - DONE
+2. Stack Array - DONE
+3. Queue Array - DONE
+4. Linked List -
