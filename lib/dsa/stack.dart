@@ -19,7 +19,9 @@ class Stack<T> {
   // Pop out the last Array
   T pop() {
     if (_storage.isEmpty) throw Exception("Stack is Empty");
-    return _storage.removeLast();
+    T item = _storage.last;
+    _storage.removeLast();
+    return item;
   }
 
   // Peek the last Array
@@ -29,14 +31,14 @@ class Stack<T> {
   }
 
   // Find Array
-  T findArray(T findArray) {
+  T findItem(T item) {
     if (_storage.isEmpty) throw Exception("Stack is Empty");
-    if (_storage.contains(findArray)) {
-      print("Array Found $findArray");
+    if (_storage.contains(item)) {
+      print("Array Found $item");
+      return item;
     } else {
       throw Exception("Stack Array is not Found");
     }
-    return findArray;
   }
 
   // Helper to check if Stack isEmpty or Not Empty
