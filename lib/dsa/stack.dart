@@ -28,6 +28,17 @@ class Stack<T> {
     return _storage.last;
   }
 
+  // Find Array
+  T findArray(T findArray) {
+    if (_storage.isEmpty) throw Exception("Stack is Empty");
+    if (_storage.contains(findArray)) {
+      print("Array Found $findArray");
+    } else {
+      throw Exception("Stack Array is not Found");
+    }
+    return findArray;
+  }
+
   // Helper to check if Stack isEmpty or Not Empty
   bool get isEmpty => _storage.isEmpty;
   bool get isNotEmpty => _storage.isNotEmpty;

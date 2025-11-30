@@ -1,7 +1,7 @@
 // import "./api/fetch.dart";
 // import "./dsa/sorted_array.dart";
-// import "./dsa/stack.dart";
-import "./dsa/queue.dart";
+import "./dsa/stack.dart";
+// import "./dsa/queue.dart";
 
 // void main() async {
 //   try {
@@ -14,26 +14,26 @@ import "./dsa/queue.dart";
 // }
 void main() {
   // sortedArray();
-  // Stack<dynamic> stack = Stack<dynamic>()
-  //   ..push(1)
-  //   ..push(2)
-  //   ..push(3)
-  //   ..push(4)
-  //   ..push(5)
-  //   ..pop()
-  //   ..pop();
-  //
-  // print(stack);
-  //
+  Stack<dynamic> stack = Stack<dynamic>()
+    ..push(1)
+    ..push(2)
+    ..push(3)
+    ..push(4)
+    ..push(5)
+    ..findArray(10)
+    ..pop();
+
+  print(stack);
+
   // List<int> numbers = <int>[4, 3, 2, 5, 1]..sort((a, b) => a.compareTo(b));
   // print("Sorted Array: $numbers");
-  Queue<dynamic> queue = Queue<dynamic>()
-    ..addElements(1)
-    ..addElements(2)
-    ..addElements(3)
-    ..peek
-    ..removeLastIndex();
-  // Expected output: 2,3
-
-  print(queue);
+  // Queue<dynamic> queue = Queue<dynamic>()
+  //   ..addElements(1)
+  //   ..addElements(2)
+  //   ..addElements(3)
+  //   ..peek
+  //   ..removeLastIndex();
+  // // Expected output: 2,3
+  //
+  // print(queue);
 }
