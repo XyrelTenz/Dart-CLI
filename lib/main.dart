@@ -3,7 +3,8 @@
 import "./dsa/stack.dart";
 // import "./dsa/queue.dart";
 import "./dsa/vertex.dart";
-import "./dsa/single_linked_list.dart";
+// import "./dsa/single_linked_list.dart";
+import "./dsa/double_linked_list.dart";
 
 // void main() async {
 //   try {
@@ -47,6 +48,7 @@ void main() {
 
   node1.next = node2;
   node2.next = node3;
+  node3.prev = node1;
 
-  printLinkedList(node1);
+  printLinked(node1);
 }
