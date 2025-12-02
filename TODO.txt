@@ -1,4 +1,6 @@
 1. Sorting Array - DONE
 2. Stack Array - DONE
 3. Queue Array - DONE
-4. Linked List -
+4. Single Linked List - Done
+5. Double Linked List  
+6. Linked List -

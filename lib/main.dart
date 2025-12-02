@@ -3,6 +3,7 @@
 import "./dsa/stack.dart";
 // import "./dsa/queue.dart";
 import "./dsa/vertex.dart";
+import "./dsa/single_linked_list.dart";
 
 // void main() async {
 //   try {
@@ -39,4 +40,13 @@ void main() {
   //
   Vertex<dynamic> vertexes = Vertex<dynamic>(index: 1, data: 2);
   print(vertexes);
+
+  Node<int> node1 = Node(value: 10);
+  Node<int> node2 = Node(value: 20);
+  Node<int> node3 = Node(value: 30);
+
+  node1.next = node2;
+  node2.next = node3;
+
+  printLinkedList(node1);
 }

@@ -1,6 +1,16 @@
-// Single Linked List
 class Node<T> {
   T value;
   Node<T>? next;
-  Node({required this.value, this.next});
+
+  Node({this.next, required this.value});
+}
+
+void printLinkedList(Node<int>? head) {
+  var currentNode = head;
+
+  while (currentNode != null) {
+    print(currentNode.value);
+
+    currentNode = currentNode.next;
+  }
 }
