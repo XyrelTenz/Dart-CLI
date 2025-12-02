@@ -1,12 +1,13 @@
+// Single Linked List
 class Node<T> {
   T value;
   Node<T>? next;
 
-  Node({this.next, required this.value});
+  Node({required this.value, this.next});
 }
 
 void printLinkedList(Node<int>? head) {
-  var currentNode = head;
+  Node<int>? currentNode = head;
 
   while (currentNode != null) {
     print(currentNode.value);
