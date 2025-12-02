@@ -2,5 +2,5 @@
 2. Stack Array - DONE
 3. Queue Array - DONE
 4. Single Linked List - Done
-5. Double Linked List  
+5. Double Linked List - Done
 6. Linked List -
