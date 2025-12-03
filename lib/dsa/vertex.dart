@@ -15,3 +15,5 @@ class Edge<T> {
 
   Edge(this.source, this.destination, [this.weight = 1.0]);
 }
+
+class Graph<T> {}
