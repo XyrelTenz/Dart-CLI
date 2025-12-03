@@ -51,4 +51,18 @@ void main() {
   node3.prev = node1;
 
   printLinked(node1);
+
+  print("");
+
+  final network = Graph<String>();
+
+  final manila = network.createVertex("Manila");
+  final cebu = network.createVertex("Cebu");
+  final pagadian = network.createVertex("pagadian");
+
+  network.addEdge(manila, cebu);
+  network.addEdge(cebu, pagadian);
+  network.addEdge(pagadian, manila);
+
+  network.printGraph();
 }
