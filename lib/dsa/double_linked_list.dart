@@ -13,9 +13,11 @@ void printLinked(Node<int>? head) {
     print("Current Node: ${currentNode.value}");
 
     lastnode = currentNode;
+    // Move to next Node
     currentNode = currentNode.next;
   }
 
+  // Remove Duplicate
   if (lastnode != null) {
     lastnode = lastnode.prev;
   }
@@ -23,6 +25,7 @@ void printLinked(Node<int>? head) {
   while (lastnode != null) {
     print("Previous Node: ${lastnode.value}");
 
+    //Go back to prev Node
     lastnode = lastnode.prev;
   }
 }
