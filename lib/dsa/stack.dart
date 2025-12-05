@@ -6,7 +6,7 @@
 * 4. Display element
 */
 
-// LIFO
+// LIFO = Last In Last Out
 
 class Stack<T> {
   final List<T> _storage = <T>[];
